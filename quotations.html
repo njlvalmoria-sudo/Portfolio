@@ -1,147 +1,154 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Quotations</title>
+<head>
+    <title>Points to Ponder</title>
 
-        <style>
-            body {
-                margin: 0;
-                font-family: Arial, Helvetica, sans-serif;
-                position: relative;
-                background-color: beige;
-            }
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
 
-            body::before {
-                content: "";
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
+            background-image:
+                url("17-49-53-110_512.gif"),
+                url("10-21-16-431_512.gif"),
+                url("starry-sky-galaxy-glitter-night-wallpaper-preview.jpg");
 
-                background-image:
-                url("wallpaper-1.jpg"),
-                url("wallpaper-2.jpg"),
-                url("wallpaper-3.jpg");
+            background-repeat: no-repeat, no-repeat, no-repeat;
+            background-size: contain, cover, cover;
+            background-position: center, center, center;
+        }
 
-                background-repeat: no-repeat, no-repeat, no-repeat;
-                background-position: top left, top center, top right;
-                background-size: 300px, 400px, 300px;
-                background-blend-mode: overlay;
+        h1 {
+            font-size: 60px;
+            color: rgb(255, 255, 255);
 
-                opacity: 0.3;
-                z-index: -1;
-            }
+            margin: 50px auto 30px auto;
+            padding: 15px 40px;
 
-            h1 {
-                font-size: medium;
-                font-weight: bold;
-                text-align: center;
-                color: aquamarine;
-                text-shadow: 2px, 2px, 5px gray;
-                margin-top: 20px;
-            }
+            border: 4px solid rgb(196, 107, 255);
+            display: inline-block;
+            background-color: rgba(0,0,0,0.5);
+            display: inline-block;
+        }
 
-            div {
-                background-color: transparent whitesmoke;
-                width: 60%;
-                height: auto;
-                margin: 20px auto;
-                padding: 15px;
-                border: 2px solid navy;
-                outline: 3px dashed lightblue;
-                background-color: rgba(167, 218, 248, 0.9);
-                font-size: 18px;
-                border-radius: 10px;
-            }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            max-width: 1000px;
+            margin: 50px auto;
+        }
 
-            span {
-                font-style: italic;
-                color: darkorchid;
-            }
+        .container div {
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            text-shadow: 2px 2px 6px black;
 
-            .home-btn {
-                display: block;
-                width: 120px;
-                margin: 20px auto;
-                padding: 10px;
-                text-align: center;
-                background-color: navy;
-                color: white;
-                text-decoration: none;
-                border-radius: 5px;
-            }
+            width: 250px;
+            height: 150px;
+            margin: 20px;
+            padding: 15px;
 
-            .home-btn:hover{
-                background-color: darkblue;
-            }
-        </style>
-    </head>
+            border: 5px solid rgb(61, 33, 222);
+            outline: 3px solid rgb(195, 128, 244);
 
-    <body>
-        <h1>Points to Ponder</h1>
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
 
-        <div>"Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind."
-        <span>— Bernard M. Baruch</span></div>
+        span {
+            display: block;
+            margin-top: 10px;
+            font-style: italic;
+            color: rgb(196, 107, 255);
+            text-shadow: 2px 2px 6px white;
+        }
 
-        <div>"Be more concerned with your character than your reputation."
-        <span>— John Wooden</span></div>
+        .home-btn {
+            display: block;
+            color: rgb(255, 255, 255);
+            width: 120px;
+            text-align: center;
+            margin: 60px auto 30px auto;
+            padding: 10px;
 
-        <div>"The mind is everything. What you think you become."
-        <span>— Buddha</span></div>
+            background-color: rgba(0,0,0,0.5);
+            border: 3px solid rgb(196, 107, 255);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
 
-        <div>"We are what we repeatedly do. Excellence, then, is not an act, but a habit."
-        <span>— Aristotle</span></div>
+<body>
+    <h1>Points to Ponder</h1>
+    <div class="container">
 
-        <div>"The only thing we have to fear is fear itself."
-        <span>— Franklin D. Roosevelt</span></div>
+    <div>"Be yourself; everyone else is already taken."
+    <span>— Oscar Wilde</span></div>
 
-        <div>"Life is either a daring adventure, or nothing."
-        <span>— Helen Keller</span></div>
+    <div>"Success consists of going from failure to failure without loss of enthusiasm."
+    <span>— Winston Churchill</span></div>
 
-        <div>"The purpose of our lives is to be happy."
-        <span>— Dalai Lama</span></div>
+    <div>"You must be the change you wish to see in the world."
+    <span>— Mahatma Gandhi</span></div>
 
-        <div>"Life itself is the most wonderful fairy tale."
-        <span>— Hans Christian Andersen</span></div>
+    <div>"We are what we repeatedly do. Excellence, then, is not an act, but a habit."
+    <span>— Aristotle</span></div>
 
-        <div>"Your time is limited, don't waste it living someone else's life."
-        <span>— Steve Jobs</span></div>
+    <div>"Life is 10% what happens to you and 90% how you react to it."
+    <span>— Charles R. Swindoll</span></div>
 
-        <div>"In the end, it's not the years in your life that count. It's the life in your years."
-        <span>— Abraham Lincoln</span></div>
+    <div>"It is never too late to be what you might have been."
+    <span>— George Eliot</span></div>
 
-        <div>"You must be the change you wish to see in the world."
-        <span>— Mahatma Gandhi</span></div>
+    <div>"You miss 100% of the shots you don't take."
+    <span>— Wayne Gretzky</span></div>
 
-        <div>"All our dreams can come true, if we have the courage to pursue them."
-        <span>— Walt Disney</span></div>
+    <div>"Don't cry because it's over; smile because it happened."
+    <span>— Dr. Seuss</span></div>
 
-        <div>"Don't let what you cannot do interfere with what you can do."
-        <span>— John Wooden</span></div>
+    <div>"If you're going through hell, keep going."
+    <span>— Winston Churchill</span></div>
 
-        <div>"A person who never made a mistake never tried anything new."
-        <span>— Albert Einstein</span></div>
+    <div>"The only place you find success before work is in the dictionary."
+    <span>— Vidal Sassoon</span></div>
 
-        <div>"Doubt kills more dreams than failure ever will."
-        <span>— Suzy Kassem</span></div>
+    <div>"In the middle of every difficulty lies opportunity."
+    <span>— Albert Einstein</span></div>
 
-        <div>"Learn from yesterday, live for today, hope for tomorrow."
-        <span>— Albert Einstein</span></div>
+    <div>"It is in your moments of decision that your destiny is shaped."
+    <span>— Tony Robbins</span></div>
 
-        <div>"The best time to plant a tree was 20 years ago. The second best time is now."
-        <span>— Chinese Proverb</span></div>
+    <div>"Learn from yesterday. Live for today. Hope for tomorrow."
+    <span>— Albert Einstein</span></div>
 
-        <div>"It is better to have loved and lost than never to have loved at all."
-        <span>— Alfred Lord Tennyson</span></div>
+    <div>"Don't judge each day by the harvest you reap but by the seeds that you plant."
+    <span>— Robert Louis Stevenson</span></div>
 
-        <div>"Happiness is not something ready-made. It comes from your own actions."
-        <span>— Dalai Lama</span></div>
+    <div>"Don't stop when you're tired, stop when you're done."
+    <span>— David Goggins</span></div>
 
-        <div>"Do what you can, with what you have, where you are."
-        <span>— Theodore Roosevelt</span></div>
+    <div>"No act of kindness is ever wasted."
+    <span>— Aesop</span></div>
 
-        <a href="quotations.html" target="_top" class="home-btn">Home</a>
-        
-    </body>
+    <div>"The only thing necessary for the triumph of evil is for good men to do nothing."
+    <span>— Edmund Burke</span></div>
+
+    <div>"You never fail until you stop trying."
+    <span>— Albert Einstein</span></div>
+
+    <div>"The way to get started is to quit talking and begin doing."
+    <span>— Walt Disney</span></div>
+
+    <div>"All the world's a stage, and all the men and women merely players."
+    <span>— William Shakespeare</span></div>
+
+    </div>
+    <a href="quotations.html" target="_top" class="home-btn">Home</a>
+
+</body>
 </html>
