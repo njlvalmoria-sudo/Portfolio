@@ -1,77 +1,147 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Quotations</title>
-    <style>
-        .wrap {
-            background-color: black;
-            font-family: Arial, Helvetica, sans-serif;
-            padding: 15%;
-        }
+    <head>
+        <title>Quotations</title>
 
-        .box {
-            position: relative;
-            width: 500px;
-            height: 400px;
-        }
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                position: relative;
+                background-color: beige;
+            }
 
-        .img1, .img2, .img3 {
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            background-size: auto;
-            background-repeat: no-repeat;
-        }
+            body::before {
+                content: "";
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
 
-        .img1 {
-            background-image: "GrayBlack.jpg";
-            top: 50px;
-            left: 100px;
-            z-index: 3;
-        }
+                background-image:
+                url("wallpaper-1.jpg"),
+                url("wallpaper-2.jpg"),
+                url("wallpaper-3.jpg");
 
-        .img2 {
-            background-image: "Gray.jpg";
-            top: 100px;
-            left: 150px;
-            z-index: 2;
-        }
+                background-repeat: no-repeat, no-repeat, no-repeat;
+                background-position: top left, top center, top right;
+                background-size: 300px, 400px, 300px;
+                background-blend-mode: overlay;
 
-        .img3 {
-            background-image: "Black.jpg";
-            top: 150px;
-            left: 200px;
-            z-index: 1;
-        }
-    </style>
-<div class="wrap">
-<div class="box">
-<span style="color:aqua">
+                opacity: 0.3;
+                z-index: -1;
+            }
 
-<h1>Points to Ponder</h1>
-<p>"Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind." — Bernard M. Baruch</p>
-<p>"Be more concerned with your character than your reputation." — John Wooden</p>
-<p>"The mind is everything. What you think you become." — Buddha</p>
-<p>"We are what we repeatedly do. Excellence, then, is not an act, but a habit." — Aristotle</p>
-<p>"The only thing we have to fear is fear itself." — Franklin D. Roosevelt</p>
-<p>"Life is either a daring adventure, or nothing." — Helen Keller</p>
-<p>"The purpose of our lives is to be happy." — Dalai Lama</p>
-<p>"Life itself is the most wonderful fairy tale."</p>
-<p>"Your time is limited, don't waste it living someone else's life." — Steve Jobs</p>
-<p>"In the end, it's not the years in your life that count. It's the life in your years." — Abraham Lincoln</p>
-<p>"You must be the change you wish to see in the world." — Mahatma Gandhi</p>
-<p>"All our dreams can come true, if we have the courage to pursue them." — Walt Disney</p>
-<p>"Don't let what you cannot do interfere with what you can do." — John Wooden</p>
-<p>"A person who never made a mistake never tried anything new." — Albert Einstein</p>
-<p>"Doubt kills more dreams than failure ever will." — Suzy Kassem</p>
-<p>"Learn from yesterday, live for today, hope for tomorrow." — Albert Einstein</p>
-<p>"The best time to plant a tree was 20 years ago. The second best time is now." — Chinese Proverb</p>
-<p>"It is better to have loved and lost than never to have loved at all." — Alfred Lord Tennyson</p>
-<p>"Happiness is not something ready-made. It comes from your own actions." — Dalai Lama</p>
-<p>"Do what you can, with what you have, where you are." — Theodore Roosevelt</p>
+            h1 {
+                font-size: medium;
+                font-weight: bold;
+                text-align: center;
+                color: aquamarine;
+                text-shadow: 2px, 2px, 5px gray;
+                margin-top: 20px;
+            }
 
-</span>
-</div>
-</div>
+            div {
+                background-color: transparent whitesmoke;
+                width: 60%;
+                height: auto;
+                margin: 20px auto;
+                padding: 15px;
+                border: 2px solid navy;
+                outline: 3px dashed lightblue;
+                background-color: rgba(167, 218, 248, 0.9);
+                font-size: 18px;
+                border-radius: 10px;
+            }
 
+            span {
+                font-style: italic;
+                color: darkorchid;
+            }
+
+            .home-btn {
+                display: block;
+                width: 120px;
+                margin: 20px auto;
+                padding: 10px;
+                text-align: center;
+                background-color: navy;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+
+            .home-btn:hover{
+                background-color: darkblue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Points to Ponder</h1>
+
+        <div>"Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind."
+        <span>— Bernard M. Baruch</span></div>
+
+        <div>"Be more concerned with your character than your reputation."
+        <span>— John Wooden</span></div>
+
+        <div>"The mind is everything. What you think you become."
+        <span>— Buddha</span></div>
+
+        <div>"We are what we repeatedly do. Excellence, then, is not an act, but a habit."
+        <span>— Aristotle</span></div>
+
+        <div>"The only thing we have to fear is fear itself."
+        <span>— Franklin D. Roosevelt</span></div>
+
+        <div>"Life is either a daring adventure, or nothing."
+        <span>— Helen Keller</span></div>
+
+        <div>"The purpose of our lives is to be happy."
+        <span>— Dalai Lama</span></div>
+
+        <div>"Life itself is the most wonderful fairy tale."
+        <span>— Hans Christian Andersen</span></div>
+
+        <div>"Your time is limited, don't waste it living someone else's life."
+        <span>— Steve Jobs</span></div>
+
+        <div>"In the end, it's not the years in your life that count. It's the life in your years."
+        <span>— Abraham Lincoln</span></div>
+
+        <div>"You must be the change you wish to see in the world."
+        <span>— Mahatma Gandhi</span></div>
+
+        <div>"All our dreams can come true, if we have the courage to pursue them."
+        <span>— Walt Disney</span></div>
+
+        <div>"Don't let what you cannot do interfere with what you can do."
+        <span>— John Wooden</span></div>
+
+        <div>"A person who never made a mistake never tried anything new."
+        <span>— Albert Einstein</span></div>
+
+        <div>"Doubt kills more dreams than failure ever will."
+        <span>— Suzy Kassem</span></div>
+
+        <div>"Learn from yesterday, live for today, hope for tomorrow."
+        <span>— Albert Einstein</span></div>
+
+        <div>"The best time to plant a tree was 20 years ago. The second best time is now."
+        <span>— Chinese Proverb</span></div>
+
+        <div>"It is better to have loved and lost than never to have loved at all."
+        <span>— Alfred Lord Tennyson</span></div>
+
+        <div>"Happiness is not something ready-made. It comes from your own actions."
+        <span>— Dalai Lama</span></div>
+
+        <div>"Do what you can, with what you have, where you are."
+        <span>— Theodore Roosevelt</span></div>
+
+        <a href="quotations.html" target="_top" class="home-btn">Home</a>
+        
+    </body>
 </html>
